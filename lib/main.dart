@@ -6,6 +6,8 @@ void main() {
   runApp(MyApp());
 }
 
+int score = 0;
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -27,6 +29,7 @@ class Page1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Page 1'),
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: ElevatedButton(
@@ -47,6 +50,7 @@ class Page2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Page 2'),
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         child: Center(
@@ -84,6 +88,7 @@ class Page2 extends StatelessWidget {
               ElevatedButton(
                 child: Text("Widgets"),
                 onPressed: () {
+                  score++;
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Page3()));
                 },
@@ -101,7 +106,8 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 2'),
+        title: const Text('Page 3'),
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         child: Center(
@@ -116,31 +122,80 @@ class Page3 extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                child: Text("Functions"),
+                child: Text("By combining widgets in a visual editor"),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Page2()));
+                      .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
               ),
               ElevatedButton(
-                child: Text("Components"),
+                child: Text(
+                    "By uisng Xcode for IOS and Android Studio for Android"),
                 onPressed: () {
+                  score++;
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Page2()));
+                      .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
               ),
               ElevatedButton(
-                child: Text("Blocks"),
+                child: Text("By combining widgets in code"),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Page2()));
+                      .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
               ),
               ElevatedButton(
-                child: Text("Widgets"),
+                child: Text("By defining widgets in config files"),
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Page2()));
+                      .push(MaterialPageRoute(builder: (context) => Page4()));
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Page4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Page 4'),
+        automaticallyImplyLeading: false,
+      ),
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                "You have scored ",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                score.toString(),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              const Text(
+                "out of 2 ",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              ElevatedButton(
+                child: Text("Restart Quiz"),
+                onPressed: () {
+                  score = 0;
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page1()));
                 },
               ),
             ],
