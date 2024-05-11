@@ -1,6 +1,7 @@
 import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,18 +28,17 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 1'),
-        automaticallyImplyLeading: false,
-      ),
       body: Center(
-        child: ElevatedButton(
-          child: const Text('Start quiz'),
-          onPressed: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Page2()));
-          },
-        ),
+        child: Column(children: <Widget>[
+          Text("Learn Flutter the fun way!"),
+          ElevatedButton(
+            child: const Text('Start quiz'),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Page2()));
+            },
+          ),
+        ]),
       ),
     );
   }
@@ -48,10 +48,6 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 2'),
-        automaticallyImplyLeading: false,
-      ),
       body: Container(
         child: Center(
           child: Column(
@@ -105,10 +101,6 @@ class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 3'),
-        automaticallyImplyLeading: false,
-      ),
       body: Container(
         child: Center(
           child: Column(
@@ -163,10 +155,6 @@ class Page4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 4'),
-        automaticallyImplyLeading: false,
-      ),
       body: Container(
         child: Center(
           child: Column(
