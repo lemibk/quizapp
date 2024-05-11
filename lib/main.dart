@@ -36,7 +36,7 @@ class Page1 extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Learn Flutter the fun way!",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
                 SizedBox(
                   height: 40,
@@ -69,6 +69,7 @@ class Page2 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
+                  fontSize: 25,
                 ),
               ),
               SizedBox(
@@ -134,10 +135,11 @@ class Page3 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
+                  fontSize: 25,
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 15,
               ),
               ElevatedButton(
                 child: Text("By combining widgets in a visual editor"),
@@ -199,18 +201,21 @@ class Page4 extends StatelessWidget {
                 "You have scored ",
                 style: TextStyle(
                   color: Colors.white,
+                  fontSize: 25,
                 ),
               ),
               Text(
                 score.toString(),
                 style: TextStyle(
                   color: Colors.white,
+                  fontSize: 25,
                 ),
               ),
               const Text(
                 "out of 2 ",
                 style: TextStyle(
                   color: Colors.white,
+                  fontSize: 25,
                 ),
               ),
               SizedBox(
