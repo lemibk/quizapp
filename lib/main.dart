@@ -1,5 +1,6 @@
 import 'dart:js';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -28,17 +29,27 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(children: <Widget>[
-          Text("Learn Flutter the fun way!"),
-          ElevatedButton(
-            child: const Text('Start quiz'),
-            onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Page2()));
-            },
-          ),
-        ]),
+      body: Container(
+        child: Center(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "Learn Flutter the fun way!",
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                ElevatedButton(
+                  child: const Text('Start quiz'),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) => Page2()));
+                  },
+                ),
+              ]),
+        ),
       ),
     );
   }
@@ -60,12 +71,18 @@ class Page2 extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               ElevatedButton(
                 child: Text("Functions"),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Page3()));
                 },
+              ),
+              SizedBox(
+                height: 10,
               ),
               ElevatedButton(
                 child: Text("Components"),
@@ -74,12 +91,18 @@ class Page2 extends StatelessWidget {
                       .push(MaterialPageRoute(builder: (context) => Page3()));
                 },
               ),
+              SizedBox(
+                height: 10,
+              ),
               ElevatedButton(
                 child: Text("Blocks"),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Page3()));
                 },
+              ),
+              SizedBox(
+                height: 10,
               ),
               ElevatedButton(
                 child: Text("Widgets"),
@@ -113,12 +136,18 @@ class Page3 extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               ElevatedButton(
                 child: Text("By combining widgets in a visual editor"),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
+              ),
+              SizedBox(
+                height: 10,
               ),
               ElevatedButton(
                 child: Text(
@@ -129,12 +158,18 @@ class Page3 extends StatelessWidget {
                       .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
               ),
+              SizedBox(
+                height: 10,
+              ),
               ElevatedButton(
                 child: Text("By combining widgets in code"),
                 onPressed: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Page4()));
                 },
+              ),
+              SizedBox(
+                height: 10,
               ),
               ElevatedButton(
                 child: Text("By defining widgets in config files"),
@@ -177,6 +212,9 @@ class Page4 extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               ElevatedButton(
                 child: Text("Restart Quiz"),
