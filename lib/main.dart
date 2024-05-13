@@ -34,6 +34,15 @@ class Page1 extends StatelessWidget {
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Container(
+                  color: Color.fromARGB(255, 160, 32, 240),
+                  height: 90,
+                  child: Image.asset('web/flutter.png',
+                      scale: 1.0, fit: BoxFit.cover),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
                 Text(
                   "Learn Flutter the fun way!",
                   style: TextStyle(color: Colors.white, fontSize: 25),
