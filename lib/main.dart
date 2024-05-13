@@ -37,6 +37,12 @@ class Page1 extends StatelessWidget {
                 Container(
                   color: Color.fromARGB(255, 160, 32, 240),
                   height: 90,
+                  child:
+                      Image.asset('web/q.png', scale: 1.0, fit: BoxFit.cover),
+                ),
+                Container(
+                  color: Color.fromARGB(255, 160, 32, 240),
+                  height: 90,
                   child: Image.asset('web/flutter.png',
                       scale: 1.0, fit: BoxFit.cover),
                 ),
