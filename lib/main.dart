@@ -213,6 +213,207 @@ class Page4 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const Text(
+                "What programming language is used to develop Flutter apps?",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              ElevatedButton(
+                child: Text("Java"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page5()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text("Python"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page5()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text("Dart"),
+                onPressed: () {
+                  score++;
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page5()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text("Swift"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page5()));
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Page5 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                "Which widget in Flutter is used to create a button?",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              ElevatedButton(
+                child: Text("Text"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page6()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text("Image"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page6()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text("Container"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page6()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text(" RaisedButton"),
+                onPressed: () {
+                  score++;
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page6()));
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Page6 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                "How does Flutter achieve cross-platform development?",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              ElevatedButton(
+                child: Text(" By using native platform APIs"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page7()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text(
+                    "By converting Flutter code to Java or Kotlin for Android"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page7()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text(
+                    "By converting Flutter code to Objective-C or Swift for iOS"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page7()));
+                },
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                child: Text(
+                    " By using a single codebase for both iOS and Android"),
+                onPressed: () {
+                  score++;
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Page7()));
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Page7 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
                 "You have scored ",
                 style: TextStyle(
                   color: Colors.white,
@@ -227,7 +428,7 @@ class Page4 extends StatelessWidget {
                 ),
               ),
               const Text(
-                "out of 2 ",
+                "out of 5 ",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
