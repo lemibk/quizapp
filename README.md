@@ -1,16 +1,14 @@
-# quiz
+# The quizapp project
+## About the project
+This project is about creating a quiz app which holds 5 question 
+## Built with 
+The main program i used in this project is flutter 
 
-A new Flutter project.
 
 ## Getting Started
+You can also create the same using the following 
+### prerequisites
+[Flutter ](https://flutter.dev/) 
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
